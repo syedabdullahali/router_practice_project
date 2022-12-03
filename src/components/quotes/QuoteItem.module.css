@@ -1,0 +1,67 @@
+.item {
+  background-color: #c2e7f0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin: 1rem 0;
+  padding: 1rem;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+
+.item:last-of-type {
+  border-bottom: none;
+}
+
+.item figure {
+  width: 70%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.item blockquote {
+  color: #212929;
+
+  margin: 0;
+
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.item p {
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+
+.item figcaption {
+  font-style: italic;
+  color: #566d6d;
+}
+a{
+  text-decoration: none;
+}
+
+@media (max-width:650px){
+  .item{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin: 1rem  0;
+    padding: 1rem;
+  }
+
+  .item figure {
+    width: 100%;
+  }
+  a{
+    width: 12rem;
+    text-decoration: none;
+    margin: 1rem auto 0 auto;
+    text-align:center;
+  }
+}
